@@ -2,7 +2,7 @@
 # and False otherwise. However, your function cannot use the multiplication, modulo, or division operators.
 
 def isEven(k):
-    if k & 1 == 0:
+    if k & 1 == 0:  #Checks last digit of binary number
         return True
     return False
 
@@ -12,7 +12,7 @@ print(isEven(12)) #Output --> True
 # R-1.4: Write a short Python function that takes a positive integer n and returns the sum of the squares of all the positive integers smaller than n.
 
 def sumOfSquares(n):
-    if n < 0: n = abs(n)
+    if n < 0: n = abs(n) # Accounts for negative numbers
     
     sum = 0
     
