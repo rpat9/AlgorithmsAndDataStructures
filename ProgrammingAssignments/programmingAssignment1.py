@@ -8,7 +8,7 @@ You dont need to worry about efficiency at this point, however, as this topic is
 def count_words(words):
     word_count = {}
 
-    listOfWords = words.split()
+    listOfWords = words.split()   # Creates a list of words
 
     for word in listOfWords:
         if word in word_count:  # Adds 1 if the word already exists.
