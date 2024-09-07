@@ -7,11 +7,16 @@ You dont need to worry about efficiency at this point, however, as this topic is
 
 def count_words(words):
     word_count = {}
-    # WRITE YOUR CODE HERE
-    # Note: Output order does not matter because it is a dictionary
+
+    listOfWords = words.split()
+
+    for word in listOfWords:
+        if word in word_count:  # Adds 1 if the word already exists.
+            word_count[word]+=1
+        else:
+            word_count[word] = 1   # Makes a new entry in dict if a new word appears
+
     return word_count
- 
- 
  
 if __name__ == '__main__':
  
