@@ -19,10 +19,12 @@ def merge_sorted_lists(list1, list2):
     
     merged_list = []
     
+    # Set up inital pointers
     i, j = 0, 0
     
     while i < len(list1) and j < len(list2):
         
+        # Compare list1 and list2, add smaller element and increment pointer
         if list1[i] < list2[j]:
             merged_list.append(list1[i])
             i += 1
@@ -30,10 +32,12 @@ def merge_sorted_lists(list1, list2):
             merged_list.append(list2[j])
             j += 1
     
+    # Add remaining elements if any from list 1
     while i < len(list1):
         merged_list.append(list1[i])
         i += 1
     
+    # Add remaining elements if any from list 2
     while j < len(list2):
         merged_list.append(list2[j])
         j += 1
