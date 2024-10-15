@@ -37,7 +37,9 @@ def splitQueue(queue):
     
     return firstHalf, secondHalf
 
+
 if __name__ == '__main__':
+    
     q = ArrayQueue()
 
     q.enqueue('a')
