@@ -56,7 +56,7 @@ class SinglyLinkedList:
         
         return pointerTwo.data if pointerTwo else None 
  
- 
+
     def reverse(self):
         current = self.head
         previous = None
